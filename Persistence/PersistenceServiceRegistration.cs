@@ -18,9 +18,11 @@ public static class PersistenceServiceRegistration
     {
         services.AddDbContext<BaseDbContext>(options =>
         {
-            options.UseInMemoryDatabase("nArchitecture");
+            options.UseSqlServer(configuration.GetConnectionString("RentAcar"));
         });
+
         services.AddScoped<IBrandRepository, BrandRepository>();
+        services.AddScoped<IModelRepository, ModelRepository>();
 
         return services;
     }

@@ -30,7 +30,7 @@ if (app.Environment.IsDevelopment())
 if (app.Environment.IsProduction())
 {
 }
-    app.ConfigureCustomExceptionMiddelware();
+app.ConfigureCustomExceptionMiddelware();
 
 app.UseHttpsRedirection();
 

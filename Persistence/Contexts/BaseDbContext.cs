@@ -1,4 +1,6 @@
-﻿using Domain.Entities;
+﻿using Azure;
+using Core.Security.Entities;
+using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
@@ -19,6 +21,15 @@ public class BaseDbContext : DbContext
     public DbSet<Fuel> Fuels { get; set; }
     public DbSet<Transmission> Transmissions { get; set; }
     public DbSet<Model> Models { get; set; }
+
+    #region Core.Security
+    public DbSet<OperationClaim> OperationClaims { get; set; }
+    public DbSet<OtpAuthenticator> OtpAuthenticators { get; set; }
+    public DbSet<RefreshToken> RefreshTokens { get; set; }
+    public DbSet<User> Users { get; set; }
+    public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
+    public DbSet<EmailAuthenticator> EmailAuthenticators { get; set; }
+    #endregion
 
     public BaseDbContext(DbContextOptions dbContextOptions, IConfiguration configuration) : base(dbContextOptions)
     {

@@ -25,13 +25,13 @@
 
   <ItemGroup>
     <Reference Include="Core.Application">
-      <HintPath>..\..\..\corePackges\Core.Packages\Core.Application\bin\Debug\net7.0\Core.Application.dll</HintPath>
+      <HintPath>..\..\Core.Packages\Core.Application\bin\Debug\net7.0\Core.Application.dll</HintPath>
     </Reference>
     <Reference Include="Core.CrossCuttingConcerns">
-      <HintPath>..\..\..\corePackges\Core.Packages\Core.CrossCuttingConcerns\bin\Debug\net7.0\Core.CrossCuttingConcerns.dll</HintPath>
+      <HintPath>..\..\Core.Packages\Core.CrossCuttingConcerns\bin\Debug\net7.0\Core.CrossCuttingConcerns.dll</HintPath>
     </Reference>
     <Reference Include="Core.Persistence">
-      <HintPath>..\..\..\corePackges\Core.Packages\Core.Persistence\bin\Debug\net7.0\Core.Persistence.dll</HintPath>
+      <HintPath>..\..\Core.Packages\Core.Persistence\bin\Debug\net7.0\Core.Persistence.dll</HintPath>
     </Reference>
   </ItemGroup>
 
